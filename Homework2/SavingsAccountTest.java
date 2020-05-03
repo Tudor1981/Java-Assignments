@@ -20,7 +20,7 @@ public class SavingsAccountTest {
         //setting the annual interest to 4%
 
         SavingsAccount.modifyInterestRate(0.04);
-        System.out.println("This is how the balances of the 2 accounts have changed after the annual interest change to 4%.");
+        System.out.println("This is how the balances of the 2 accounts have changed after the annual interest change to 4% for the current month.");
 
         //account1
         System.out.printf("\nThe saver1 balance: %.2f ---> ", saver1.getSavingsBalance());
@@ -35,7 +35,7 @@ public class SavingsAccountTest {
         //setting the annual interest to 5%
 
         SavingsAccount.modifyInterestRate(0.05);
-        System.out.println("This is how the balances of the 2 accounts have changed after the annual interest change to 5%.");
+        System.out.println("This is how the balances of the 2 accounts have changed after the annual interest change to 5% for the next month.");
 
         //account1
         System.out.printf("\nThe saver1 balance: %.2f ---> ", saver1.getSavingsBalance());

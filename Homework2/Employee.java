@@ -1,5 +1,7 @@
 //Employee blueprint with some functionalities
 
+import java.text.DecimalFormat;
+
 public class Employee {
 
     private String firstName;
@@ -60,10 +62,11 @@ public class Employee {
 
     @Override
     public String toString(){
+        DecimalFormat myFormatter = new DecimalFormat("0.00");
         String result;
-        result = "first name: " + this.getFirstName() + "; \n";
-        result += "last name: " + this.getLastName() + "; \n";
-        result += "quantity: " + this.getMonthlySalary() + ".";
+        result = "First name: " + this.getFirstName() + "; \n";
+        result += "Last name: " + this.getLastName() + "; \n";
+        result += "Monthly salary: " + myFormatter.format(this.getMonthlySalary()) + ".";
         return result;
     }
 }

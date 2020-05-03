@@ -11,6 +11,8 @@ public class DateTest {
         Date date2 = new Date(1, 12, 1456);
 
         //displaying the initial info in each object plus the date in the requested format
+        System.out.printf("\nB.C. -> before Christ\nA.C. -> after Christ\n");
+
         System.out.println("\nThe initial information in date1 is:\n\n" + date1.toString());
         System.out.print("The date: ");
         date1.displayDate();

@@ -1,5 +1,7 @@
 // An invoice blueprint with some functionalities.
 
+import java.text.DecimalFormat;
+
 public class Invoice {
 
     //data members
@@ -11,13 +13,19 @@ public class Invoice {
     public Invoice(String initPartNumber, String initPartDesc, int initQuantityPurchased, double initPricePerUnit){
         if (initPartNumber != null && !initPartNumber.isEmpty()){
             partNumber = initPartNumber;
+        }else {
+            partNumber = "Not specified";
         }
         if (initPartDesc != null && !initPartDesc.isEmpty()){
             partDesc = initPartDesc;
+        }else {
+            partDesc = "Not specified";
         }
+        //the default value for int is 0 so we don't need to specify it in our control structure
         if (initQuantityPurchased > 0){
             quantityPurchased = initQuantityPurchased;
         }
+        //the default value for double is 0.0 so we don't need to specify it in our control structure
         if (initPricePerUnit > 0){
             pricePerUnit = initPricePerUnit;
         }
@@ -75,12 +83,13 @@ public class Invoice {
 
     @Override
     public String toString(){
+        DecimalFormat myFormatter = new DecimalFormat("0.00");
         String result;
         result = "Part number: " + this.getPartNumber() + "; \n";
         result += "Part description: " + this.getPartDesc() + "; \n";
         result += "Quantity purchased: " + this.getQuantityPurchased() + "; \n";
-        result += "Price per unit: " + this.getPricePerUnit() + ";\n";
-        result += "Total cost: " + this.getInvoiceAmount() +".";
+        result += "Price per unit: " + myFormatter.format(this.getPricePerUnit()) + ";\n";
+        result += "Total cost: " + myFormatter.format(this.getInvoiceAmount()) +".";
         return result;
     }
 }

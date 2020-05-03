@@ -23,7 +23,7 @@ public class Account {
         if (amount <= balance){
             balance -= amount;
         }else {
-            System.out.printf("Debit amount exceeded account balance which is %d", balance);
+            System.out.printf("Debit amount exceeded account balance which is %.2f.\n", balance);
         }
     }
 }

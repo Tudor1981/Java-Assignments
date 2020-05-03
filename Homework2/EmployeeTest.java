@@ -28,7 +28,7 @@ public class EmployeeTest {
         String salary1 = reader.nextLine();
         double monthlySalary1 = Double.parseDouble(salary1);
 
-        System.out.println("The following changes occurred for the first employee.");
+        System.out.println("\nThe following changes occurred for the first employee.");
         System.out.printf("\nFirst name: %s ---> ", employee1.getFirstName());
         employee1.setFirstName(firstName1);
         System.out.printf("%s", employee1.getFirstName());
@@ -51,10 +51,10 @@ public class EmployeeTest {
         double monthlySalary2 = Double.parseDouble(salary2);
         reader.close();
 
-        System.out.println("The following changes occurred for the second employee.");
+        System.out.println("\nThe following changes occurred for the second employee.");
         System.out.printf("\nFirst name: %s ---> ", employee2.getFirstName());
         employee2.setFirstName(firstName2);
-        System.out.printf("%s", employee1.getFirstName());
+        System.out.printf("%s", employee2.getFirstName());
         System.out.printf("\nLast name: %s ---> ", employee2.getLastName());
         employee2.setLastName(lastName2);
         System.out.printf("%s", employee2.getLastName());
