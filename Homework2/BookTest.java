@@ -6,6 +6,8 @@ public class BookTest {
 
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
+
+        //Creating an array to store our 3 objects
         Book[] bookArray = new Book[3];
         for (int i = 0; i < 3; i++){
             bookArray[i] = new Book("", 0, "", "");
