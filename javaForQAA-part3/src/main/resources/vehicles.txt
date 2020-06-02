@@ -1,0 +1,18 @@
+Car, Mercedes, C180, 20000, 220, Automatic, Sedan
+Car, Ford, KA, 5000, 120, Manual, Sedan
+Car, Volkswagen, Pasat, 12000, 170, Manual, Coupe
+khjkiyui, ulik, khjkhkj
+Car, Volvo, V60, 9000, 140, Automatic, Wagon
+kuyuy, uiyuk, 8767576565ui
+Motorcycle, Honda, Fury, 15000, 150, Cruiser
+Motorcycle, Loncyn, Super, 2500, 130, Chopper
+Motorcycle, Tormenta, X11, 3300, 110, Chopper
+sddsddwdwd
+Motorcycle, Honda, CRF450L, 9000, 180, Enduro
+Motorcycle, Husqvarna, FE_Line, 11000, 190, Enduro
+Motorcycle, Honda, Rebel 500, 15000, 140, Cruiser
+
+Bicycle, Basso, Diamante, 700, 11
+Bicycle, Basso, Astra, 590, 14
+Bicycle, Bianchi, LIF-E, 350, 16
+Tractor, John Deere, 7R Series, 750
